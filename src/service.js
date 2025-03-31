@@ -1,14 +1,11 @@
 import axios from 'axios';
 
 // const apiUrl = "http://localhost:5141"
-const apiUrl=process.env.SERVER_API_URL
+const apiUrl=process.env.REACT_APP_SERVER_API_URL
 
 export default {
   getTasks: async () => {
-
-    try {
-      
-      
+    try { 
     const result = await axios.get(`${apiUrl}/items`)
     return result.data;// מחזיר את הפריט שנוצר
     } catch (error) {
