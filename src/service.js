@@ -5,6 +5,7 @@ const apiUrl=process.env.REACT_APP_SERVER_API_URL
 
 export default {
   getTasks: async () => {
+    console.log("All ENV Variables:", process.env);
     console.log("API URL:", apiUrl);
     console.log("process.env.API URL:", process.env.REACT_APP_SERVER_API_URL);
     try { 
