@@ -6,6 +6,7 @@ const apiUrl=process.env.REACT_APP_SERVER_API_URL
 export default {
   getTasks: async () => {
     console.log("API URL:", apiUrl);
+    console.log("process.env.API URL:", process.env.REACT_APP_SERVER_API_URL);
     try { 
     const result = await axios.get(`${apiUrl}/items`)
     return result.data;// מחזיר את הפריט שנוצר
